@@ -1,15 +1,14 @@
 {
   "id": "lucky-flight-takedown",
-  "name": "lucky-flight-takedown",
   "title": "Lucky Flight Takedown",
   "description": "Lucky Flight Takedown is an example adventure for the Cy_Borg game system. This module includes pre-generated NPCs, roll tables, and scenes for use with the adventure. Running the adventure requires the Cy_Borg game book.\nThis Lucky Flight Takedown Module is an independent production by RPGxNihilo and is not affiliated with Stockholm Kartell. It is published under the CY_BORG Third Party License.",
   "version": "1.0.0",
-  "minimumCoreVersion": "0.8.6",
-  "compatibleCoreVersion": "10",
+  "Library": "false",
+  "manifestplusversion": "1.2.0",  
   "compatibility": {
-    "minimum": "0.8.6",
-    "verified": "10",
-    "maximum": "10"
+  "minimum": "0.8.6",
+  "verified": "10",
+  "maximum": "10"
   },
   "author": "RPGxNihilo",
   "authors": [
@@ -17,7 +16,17 @@
       "name": "RPGxNihilo"
     }
   ],
-  "packs": [
+"relationships": {
+  "systems": [{
+             "id": "cy-borg",
+             "type": "system",
+             "manifest": "https://raw.githubusercontent.com/fvtt-fria-ligan/cyborg-foundry-vtt/main/system.json"
+             "compatability": {
+                      "verified": "1.5.3"
+  }
+              }],
+
+"packs": [
     {
       "name": "actors",
       "label": "Lucky Flight Takedown",
@@ -51,8 +60,8 @@
   "esmodules": [
     "./scripts/init.js"
   ],
-  "url": "https://github.com/rpgxnihilo/lucky-flight-takedown",
-  "manifest": "",
-  "download": "",
+  "url": "#{URL}#",
+  "manifest": "#{MANIFEST}#",
+  "download": "#{DOWNLOAD}#",
   "manifestPlusVersion": "1.2.0"
 }
